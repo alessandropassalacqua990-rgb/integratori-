@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guida integratori · SUPER-ALE</title>
+<meta name="description" content="Gli integratori che consiglio: cosa prendere, quanto, quando e cosa puoi lasciare sullo scaffale. Con il codice sconto SUPERALE.">
+<meta property="og:title" content="La mia guida agli integratori · SUPER-ALE">
+<meta property="og:description" content="Cosa prendere, quanto, quando. Con il codice sconto SUPERALE.">
+<meta property="og:image" content="img/ale.jpg">
+<link rel="icon" href="img/icona_bs.png">
+<style>
+@font-face{font-family:"Montserrat";font-weight:900;src:url(font/Montserrat-900-normal.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Newsreader";font-weight:400;src:url(font/Newsreader-400-normal.ttf) format("truetype");font-display:swap}
+@font-face{font-family:"Newsreader";font-weight:600;src:url(font/Newsreader-600-normal.ttf) format("truetype");font-display:swap}
+:root{--bg:#050A18;--panel:#0B1430;--panel2:#101C40;--line:rgba(255,255,255,.12);--text:#FFFFFF;--soft:#C9D2E6;--muted:#8793B0;--accent:#9FB6EA;--rouge:#9E1B2B;--ink:#00225A}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+section,main{scroll-margin-top:56px}
+body{background:var(--bg);color:var(--text);font-family:"Newsreader",Georgia,serif;font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.h{font-family:"Montserrat",Arial,sans-serif;font-weight:900;letter-spacing:-.02em;line-height:1.02;text-transform:lowercase}
+.kick{font-weight:600;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.hl{color:var(--accent)}
+b{font-weight:600;color:#fff}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--rouge);color:#fff;text-decoration:none;font-family:"Montserrat",Arial,sans-serif;font-weight:900;font-size:14px;letter-spacing:.04em;padding:16px 26px;border-radius:999px;text-transform:uppercase;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px);background:#b8283a}
+.btn.white{background:#fff;color:var(--ink)}
+.link{font-family:"Montserrat";font-weight:900;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px}
+
+/* striscia fissa in alto */
+.strip{position:sticky;top:0;z-index:10;display:block;text-align:center;background:var(--rouge);color:#fff;text-decoration:none;font-family:"Montserrat",Arial,sans-serif;font-weight:900;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:14px 16px}
+.strip span{display:inline-block;transition:transform .15s}
+.strip:hover span{transform:translateX(4px)}
+@media (max-width:560px){.strip{font-size:12px;padding:12px}}
+/* barra */
+.bar{position:sticky;top:0;z-index:10;background:rgba(5,10,24,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px}
+.bar img{height:34px;display:block}
+.bar .btn{padding:11px 18px;font-size:12px}
+
+/* hero */
+.hero{padding:80px 0 0;text-align:center;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(44,66,168,.35),transparent 70%)}
+.hero .logo{height:90px;margin:0 auto 44px;display:block}
+.hero h1{font-size:clamp(46px,8vw,96px);margin:18px auto 24px;max-width:13ch}
+.hero p.lead{font-size:21px;max-width:40ch;margin:0 auto;color:var(--soft)}
+.hero .cta{margin-top:34px;display:flex;justify-content:center;align-items:center;gap:26px;flex-wrap:wrap}
+.firma{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:40px}
+.firma img{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:50% 15%;border:2px solid var(--line)}
+.firma div{text-align:left;font-size:15px;color:var(--soft);line-height:1.35}
+.firma b{display:block;font-size:16px}
+.hgrid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;text-align:left}
+.hero .hgrid h1{margin:18px 0 34px;line-height:1.08;font-size:clamp(40px,5.6vw,74px);max-width:none}
+.hero .hgrid p.lead{margin:0}
+.hgrid .cta,.hgrid .firma{justify-content:flex-start}
+.hfoto{border-radius:26px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.hfoto img{width:100%;height:100%;object-fit:cover;display:block}
+/* recensioni */
+.recensioni{columns:3;column-gap:18px;margin-top:36px}
+.rec{break-inside:avoid;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:26px;margin-bottom:18px}
+.rec .stelle{color:#F2C14E;letter-spacing:3px;font-size:15px;margin-bottom:12px}
+.rec p{font-size:17px;color:#fff;line-height:1.5}
+.rec .chi{margin-top:14px;font-size:14px;color:var(--muted)}
+.rec .chi b{color:var(--soft);font-weight:600}
+@media (max-width:960px){.recensioni{columns:2}}
+@media (max-width:760px){.hgrid{grid-template-columns:1fr;gap:36px}.hfoto{max-width:440px}}
+@media (max-width:560px){.recensioni{columns:1}}
+
+/* nastro prodotti */
+.giostra{overflow:hidden;margin-top:64px;padding:8px 0 80px;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.giostra .nastro{gap:18px}
+.giostra .p{width:170px;height:170px;flex:none;background:#fff;border-radius:22px;display:flex;align-items:center;justify-content:center}
+.giostra .p img{width:80%;height:80%;object-fit:contain}
+
+section{padding:80px 0}
+h2.h{font-size:clamp(34px,4.8vw,54px);margin:14px 0 18px}
+.sub{font-size:19px;max-width:58ch;color:var(--soft)}
+
+/* leggi prima */
+.prima{background:var(--panel);border:1px solid var(--line);border-radius:28px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.prima h2{margin:12px 0 0}
+.prima p{font-size:19px;color:var(--soft)}
+/* come usare */
+.passi{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.passo{border-top:2px solid var(--accent);padding-top:18px}
+.passo .n{font-family:"Montserrat";font-weight:900;font-size:44px;line-height:1;color:#fff}
+.passo h3{font-family:"Montserrat";font-weight:900;font-size:18px;margin:12px 0 6px}
+.passo p{font-size:16.5px;color:var(--soft)}
+.passo a{color:var(--accent)}
+
+/* codici */
+.codici{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}
+.cod{display:flex;align-items:center;gap:20px;padding:26px 28px;background:var(--panel);border:1px solid var(--line);border-radius:22px}
+.cod .pct{font-family:"Montserrat";font-weight:900;font-size:44px;line-height:1;min-width:112px}
+.cod .b{font-weight:600;font-size:18px}
+.cod .c{font-size:15px;color:var(--muted)}
+.cod button{margin-left:auto;background:#fff;border:0;color:var(--ink);border-radius:999px;padding:10px 16px;font-family:"Montserrat";font-weight:900;font-size:11px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;white-space:nowrap}
+.trasp{font-size:15px;color:var(--muted);margin-top:18px;max-width:70ch}
+
+/* fasce */
+.fascia{border-top:1px solid var(--line)}
+.tag{display:inline-block;font-family:"Montserrat";font-weight:900;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--rouge);padding:7px 12px;border-radius:10px}
+.tag.b{background:#2C42A8}.tag.c{background:#3A4766}
+.gruppo{font-family:"Montserrat";font-weight:900;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:48px 0 0}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px}
+.card{display:grid!important;grid-template-columns:150px 1fr;gap:0 22px;align-content:start}
+.card>.img{grid-row:1/span 8;aspect-ratio:1;margin:0}
+.card>*:not(.img){grid-column:2}
+.gruppo+.cards{margin-top:18px}
+.card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:18px 18px 22px}
+.card .img{background:#fff;border-radius:16px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:20px}
+.card .img img{width:70%;height:84%;object-fit:contain}
+.card .brand{font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.card h3{font-family:"Montserrat";font-weight:900;font-size:21px;line-height:1.1;margin:6px 0}
+.card .claim{font-weight:600;font-size:17px;color:var(--accent);margin-bottom:12px}
+.card .t{font-size:16px;color:var(--soft)}
+.card .t p+p{margin-top:8px}
+.card .uso{margin-top:16px;font-size:15px;background:rgba(255,255,255,.05);border-radius:14px;padding:12px 14px}
+.card .uso div{display:flex;gap:10px;padding:3px 0}
+.card .uso span{font-family:"Montserrat";font-weight:900;font-size:11px;letter-spacing:.1em;text-transform:uppercase;min-width:62px;padding-top:3px;color:var(--accent)}
+.card .avviso{font-size:14px;color:var(--muted);margin-top:10px}
+.card .foot{margin-top:auto;padding-top:18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.card .prezzo{font-size:15px;color:var(--muted)}
+.card .foot .btn{padding:11px 16px;font-size:11px;white-space:nowrap}
+.card .prezzo{white-space:nowrap}
+
+/* giornata */
+.giorno{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}
+.momento{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:22px}
+.momento h3{font-family:"Montserrat";font-weight:900;font-size:16px;text-transform:uppercase;letter-spacing:.06em}
+.momento .q{font-size:15px;color:var(--muted);margin-bottom:10px}
+.momento ul{list-style:none}
+.momento li{font-size:16.5px;padding:7px 0;border-top:1px solid var(--line)}
+.momento li:first-child{border-top:0}
+.momento li span{display:block;color:var(--muted);font-size:14.5px}
+
+/* prima e dopo */
+.casi{overflow:hidden;margin-top:36px;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.nastro{display:flex;gap:18px;width:max-content;animation:scorri 55s linear infinite}
+.giostra .nastro{animation-duration:40s}
+.casi:hover .nastro{animation-play-state:paused}
+.caso{flex:none;border-radius:18px;overflow:hidden}
+.caso img{height:340px;width:auto;display:block}
+.caso .t{padding:10px 2px;font-size:15px}
+@keyframes scorri{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.nastro{animation:none}.casi,.giostra{overflow-x:auto}}
+.legale{font-size:14px;color:var(--muted);margin-top:16px}
+
+/* chiusura */
+.punto{background:linear-gradient(160deg,#00225A,#0B1430);border:1px solid var(--line);border-radius:28px;padding:88px 32px;text-align:center}
+.punto h2{max-width:16ch;margin-left:auto;margin-right:auto}
+.punto p{max-width:50ch;margin:0 auto 34px;font-size:19px;color:var(--soft)}
+.punto .nota{font-size:14px;color:var(--muted);margin-top:16px}
+
+footer{padding:56px 0 72px;font-size:14px;color:var(--muted);border-top:1px solid var(--line)}
+footer p+p{margin-top:8px}
+footer img{height:30px;margin-bottom:18px}
+
+@media (max-width:960px){.cards{grid-template-columns:1fr}.giorno{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.card{grid-template-columns:1fr!important}.card>.img{grid-row:auto;aspect-ratio:4/3;margin-bottom:18px}.card>*:not(.img){grid-column:1}}
+@media (max-width:760px){
+  .hero{padding-top:56px}
+  .hero .logo{height:80px}
+  section{padding:56px 0}
+  .prima{grid-template-columns:1fr;padding:32px 24px;gap:18px}
+  .passi,.codici{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .cards,.giorno{grid-template-columns:1fr}
+  .giostra .p{width:120px;height:120px;border-radius:16px}
+  .cod{padding:20px}
+  .cod .pct{font-size:32px;min-width:78px}
+  .caso img{height:230px}
+  .punto{padding:56px 22px;border-radius:22px}
+  .bar .btn{padding:10px 14px;font-size:11px}
+}
+</style>
+</head>
+<body>
+
+<a class="strip" href="https://formcoaching.super-ale.com/?utm_source=guida-integratori&utm_content=striscia">Prenota la tua analisi gratuita con me <span>→</span></a>
+
+<header class="hero"><div class="wrap">
+  <img class="logo" src="img/logo_b.png" alt="SUPER-ALE">
+  <div class="hgrid">
+    <div class="htext">
+      <div class="kick">SUPER-ALE · La mia guida agli integratori</div>
+      <h1 class="h">gli integratori che ti servono <span class="hl">davvero</span></h1>
+      <p class="lead">Quelli che consiglio ai miei clienti, con la dose, il momento giusto e il prodotto preciso. E quelli che puoi lasciare sullo scaffale.</p>
+      <p class="lead" style="margin-top:14px">Così eviti di perdere tempo e di sprecare soldi in integratori inutili. Se hai qualsiasi domanda, <a href="https://ig.me/m/alessandro.passalacqua_" target="_blank" rel="noopener" style="color:#fff">scrivimi su Instagram</a>.</p>
+      <div class="cta">
+        <a class="btn" href="#base">Parti dalla base</a>
+        <a class="link" href="#codici">Codice sconto</a>
+      </div>
+      <div class="firma"><img src="img/ale_avatar.jpg" alt="Alessandro Passalacqua"><div><b>Creata da Alessandro Passalacqua</b>Founder di SUPER-ALE</div></div>
+    </div>
+    <div class="hfoto"><img src="img/ale.jpg" alt="Alessandro Passalacqua durante un allenamento"></div>
+  </div>
+</div>
+<div class="giostra"><div class="nastro" id="giostra"></div></div>
+</header>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="prima">
+    <div><div class="kick">Leggi prima questo</div><h2 class="h">gli integratori colmano i vuoti</h2></div>
+    <p>Servono a coprire quello che la tua alimentazione non riesce a darti, e la base resta la dieta. <b>Se mangi male, dormi poco e ti alleni a caso, nessun barattolo recupera la differenza.</b> Prima sistema cibo, allenamento e sonno, poi usa questa guida per aggiungere quello che ti manca.</p>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="kick">Come usare questa guida</div>
+  <h2 class="h">tre passi, niente di più</h2>
+  <div class="passi">
+    <div class="passo"><div class="n">1</div><h3>Parti dalla base</h3><p>Sono quattro integratori e fanno la maggior parte del lavoro. Se compri solo qualcosa, compra questi.</p></div>
+    <div class="passo"><div class="n">2</div><h3>Segui la giornata</h3><p>Cosa prendere la mattina, intorno all'allenamento e la sera. <a href="#giornata">Vai alla giornata tipo</a></p></div>
+    <div class="passo"><div class="n">3</div><h3>Usa il mio codice</h3><p>Con SUPERALE hai lo sconto su tutti e due i brand. <a href="#codici">Vedi i codici</a></p></div>
+  </div>
+</div></section>
+
+<section id="codici"><div class="wrap">
+  <div class="kick">Codice sconto</div>
+  <h2 class="h">usa <span style="text-transform:none">SUPERALE</span> al checkout</h2>
+  <div class="codici">
+    <div class="cod"><div class="pct">−10%</div><div><div class="b">+1 Performance</div><div class="c">creatina, proteine, elettroliti e altri</div></div><button data-copia="SUPERALE">Copia</button></div>
+    <div class="cod"><div class="pct">−5%</div><div><div class="b">be levels</div><div class="c">omega-3, magnesio, vitamina D3 e altri</div></div><button data-copia="SUPERALE">Copia</button></div>
+  </div>
+  <p class="trasp">Sono due brand con cui collaboro: con il mio codice tu hai lo sconto e a me arriva una piccola commissione, senza che tu paghi niente in più.</p>
+</div></section>
+
+<main id="fasce"></main>
+
+<section id="giornata"><div class="wrap">
+  <div class="kick">La tua giornata</div>
+  <h2 class="h">cosa prendere, e quando</h2>
+  <p class="sub">Fai uno screenshot e prendi solo quello che hai scelto. Anche nei giorni di riposo.</p>
+  <div class="giorno">
+    <div class="momento"><h3>Mattina</h3><div class="q">a colazione</div><ul>
+      <li>Vitamina D3 + K2<span>con un pasto che contiene grassi</span></li>
+      <li>Omega-3<span>con il pasto</span></li>
+      <li>Wake up mood<span>se lo usi</span></li>
+      <li>Multivitaminico<span>se lo usi</span></li>
+    </ul></div>
+    <div class="momento"><h3>Allenamento</h3><div class="q">prima, durante, dopo</div><ul>
+      <li>Pre-workout<span>20-30 minuti prima, entro le 16</span></li>
+      <li>EAA o ACE aminolytes<span>durante, se ti alleni a lungo</span></li>
+      <li>Elettroliti<span>se sudi tanto</span></li>
+      <li>Proteine e creatina<span>dopo, nello shake</span></li>
+    </ul></div>
+    <div class="momento"><h3>Pomeriggio</h3><div class="q">solo se serve</div><ul>
+      <li>Proteine<span>se sei indietro con il totale</span></li>
+      <li>Elettroliti<span>nei giorni caldi</span></li>
+    </ul></div>
+    <div class="momento"><h3>Sera</h3><div class="q">30-60 minuti prima di dormire</div><ul>
+      <li>Magnesio</li>
+      <li>Chill mood<span>se lo usi</span></li>
+      <li>Ashwagandha<span>se la usi</span></li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section id="casi-sez" hidden><div class="wrap">
+  <div class="kick">I risultati</div>
+  <h2 class="h">cosa succede quando sistemi il resto</h2>
+  <div class="casi"><div class="nastro" id="nastro"></div></div>
+  <p class="legale">Risultati individuali, ottenuti con allenamento, alimentazione e costanza. Non sono garantiti e dipendono dal punto di partenza di ognuno.</p>
+</div></section>
+
+<section id="recensioni"><div class="wrap">
+  <div class="kick">Cosa dicono</div>
+  <h2 class="h">le parole dei miei ragazzi</h2>
+  <div class="recensioni">
+    <div class="rec"><div class="stelle">★★★★★</div><p>Il nutrizionista mi ha creato una dieta che non avevo mai provato e mi ha stupito piacevolmente. Ho imparato che il numero della bilancia non è sempre veritiero, e sono contenta dei risultati che sto avendo. Non lo dico per circostanza: <b>sono migliorata molto di più in questi 1-2 mesi di percorso con voi che negli ultimi anni!</b> Non vedo l'ora di proseguire.</p><div class="chi"><b>Cliente</b> · coaching 1:1 con nutrizione</div></div>
+    <div class="rec"><div class="stelle">★★★★★</div><p>Trovare Ale e affidarmi a lui è stata una delle decisioni migliori che io abbia mai preso. Due mesi fa pesavo 88 kg e non riuscivo a correre per più di 5 minuti, ora peso 84,5 e corro 40 minuti senza problemi. Ma il risultato più grande è stato il ritorno dell'amore per lo sport.</p><div class="chi"><b>Cliente</b> · coaching corsa</div></div>
+    <div class="rec"><div class="stelle">★★★★★</div><p>Per la prima volta ho corso 11 km, con un caldo torrido e tanti dislivelli. Volevo mollare già al quarto chilometro: grazie ad Ale e al percorso che mi sta portando alla mia prima mezza, l'ho finito senza camminare nemmeno 10 metri.</p><div class="chi"><b>Simone F.</b> · verso la prima mezza maratona</div></div>
+    <div class="rec"><div class="stelle">★★★★★</div><p>Ho appena finito la palestra, mi è piaciuta tantissimo: non troppi esercizi e quelli giusti. E il fastidio al ginocchio è andato via.</p><div class="chi"><b>Cliente</b> · coaching palestra</div></div>
+    <div class="rec"><div class="stelle">★★★★★</div><p>Ho provato la nuova scheda e posso solo dire fantastica! Tempi ed esercizi top, e soprattutto riesco a coordinarmi con il lavoro.</p><div class="chi"><b>Cliente</b> · coaching palestra</div></div>
+    <div class="rec"><div class="stelle">★★★★★</div><p>Il tuo è un metodo davvero unico: combinare tutto insieme, con competenze trasversali tra corsa, pesi e nutrizione, è molto figo.</p><div class="chi"><b>Cliente</b> · coaching 1:1</div></div>
+    <div class="rec"><div class="stelle">★★★★★</div><p>Abbiamo raggiunto il primo obiettivo, il più importante per me: farmi tornare la voglia di muovermi e fare sport. Pensavo che non ci sarei mai più arrivato.</p><div class="chi"><b>Cliente</b> · coaching 1:1</div></div>
+    <div class="rec"><div class="stelle">★★★★★</div><p>Ti ringrazio tanto per la tua professionalità! Stasera mi prendo del tempo per leggere con calma la scheda e riprendere con la fase 2 a pieno ritmo.</p><div class="chi"><b>Cliente</b> · coaching palestra</div></div>
+  </div>
+  <p class="legale">Messaggi reali dei miei clienti, riportati con il loro permesso.</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="punto">
+    <div class="kick">L'ultima cosa</div>
+    <h2 class="h">gli integratori sono l'ultimo 5%</h2>
+    <p>Il 95% lo fanno calorie, proteine, allenamento e sonno. Se vuoi sapere cosa serve davvero a te, costruiamo il tuo piano insieme.</p>
+    <a class="btn white" href="https://formcoaching.super-ale.com/?utm_source=guida-integratori&utm_content=fondo">Voglio il mio piano</a>
+    <div class="nota">Una chiamata gratuita con me e il team SUPER-ALE</div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <img src="img/logo_b.png" alt="SUPER-ALE">
+  <p><b>Link affiliati.</b> Alcuni link di questa pagina sono affiliati: se acquisti con il codice SUPERALE o dai miei link ricevo una commissione, senza costi in più per te.</p>
+  <p>Le informazioni di questa pagina sono divulgative e non sostituiscono il parere di un medico. Se hai una condizione medica, sei in gravidanza o prendi farmaci, parlane con il tuo medico prima di iniziare qualsiasi integratore.</p>
+  <p>© 2026 Alessandro Passalacqua · SUPER-ALE</p>
+</div></footer>
+
+<script>
+const PIU1 = "+1 Performance", BL = "be levels";
+const REF = "sca_ref=12268522.pBeqge1Bwy4p";
+const SCONTO = {[PIU1]: 0.10, [BL]: 0.05};
+
+// fascia: 1 base, 2 utili, 3 opzionali. gruppo: solo per gli opzionali.
+const PRODOTTI = [
+  {id:"creatina", f:1, nome:"Creatina monoidrato", brand:PIU1, prezzo:29.95, img:"creatina.jpg",
+   url:"https://1performancenutrition.com/collections/best-sellers/products/creatine",
+   claim:"L'integratore più utile in assoluto",
+   testo:["Ti aiuta a costruire forza e a recuperare meglio tra un allenamento e l'altro, ed è l'integratore più studiato che esista.","La metto al primo posto, anche se ultimamente è un po' sopravvalutata: non risolve tutti i problemi che qualcuno promette. Fa bene una cosa, e la fa per anni."],
+   dose:"3-5 g al giorno", quando:"Quando vuoi, tutti i giorni, anche a riposo"},
+  {id:"omega3", f:1, nome:"Omega-3", brand:BL, prezzo:39, img:"omega3.jpg",
+   url:"https://belevels.com/products/omega3?"+REF,
+   claim:"Se mangi poco pesce grasso",
+   testo:["Hanno una cattiva reputazione per colpa dei tanti prodotti di bassa qualità in commercio, per questo conta sceglierne uno buono.","Possono supportare la salute del cuore, delle articolazioni e le funzioni cognitive, soprattutto se mangi poco salmone, sgombro o sardine."],
+   dose:"Quella indicata in etichetta", quando:"Con un pasto"},
+  {id:"magnesio", f:1, nome:"Magnesio (con bisglicinato)", brand:BL, prezzo:32, img:"magnesio.jpg",
+   url:"https://belevels.com/products/magnesium?"+REF,
+   claim:"Per il sonno e il recupero",
+   testo:["È uno dei più utili se ti alleni, dormi male o sei spesso sotto stress: può aiutare il recupero muscolare, la qualità del sonno e il rilassamento.","Dentro c'è il bisglicinato, una delle forme che il corpo assorbe meglio, insieme ad altre due forme di magnesio."],
+   dose:"Quella indicata in etichetta", quando:"30-60 minuti prima di dormire"},
+  {id:"d3k2", f:1, nome:"Vitamina D3 + K2", brand:BL, prezzo:26, img:"d3k2.jpg",
+   url:"https://belevels.com/products/d3-k2-vitamins?"+REF,
+   claim:"Se lavori in ufficio, probabilmente ti serve",
+   testo:["Molte persone sono carenti di vitamina D, soprattutto chi passa la giornata al chiuso e prende poco sole.","Se sei carente, può supportare gli ormoni, l'umore e il benessere generale, e aiuta il corpo ad assorbire il calcio, che diventa sempre più importante con l'età. La K2 aiuta a portare quel calcio dove serve."],
+   dose:"Quella indicata in etichetta", quando:"A colazione, con un pasto che contiene grassi",
+   avviso:"Il modo migliore per sapere se ti serve è controllare la vitamina D con le analisi del sangue."},
+
+  {id:"proteine", f:2, nome:"Whey protein", brand:PIU1, prezzo:49.95, img:"proteine.jpg",
+   url:"https://1performancenutrition.com/collections/proteine/products/whey-protein-concentrate",
+   claim:"Il modo più facile per arrivare alle tue proteine",
+   testo:["Se durante il giorno non riesci a raggiungere il tuo fabbisogno di proteine, sono il metodo più facile e veloce per aumentarle.","Contano le proteine di tutta la giornata: lo shake non va bevuto per forza entro trenta minuti dall'allenamento."],
+   dose:"1 dose, quando ti manca per arrivare al totale", quando:"Quando ti è comodo, spesso dopo l'allenamento"},
+  {id:"elettroliti", f:2, nome:"Elettroliti", brand:PIU1, prezzo:36.95, img:"elettroliti.jpg",
+   url:"https://1performancenutrition.com/collections/performance/products/1%C2%A9-ultimate-electrolytes",
+   claim:"Quando sudi tanto",
+   testo:["Sodio, potassio e magnesio sono i minerali che perdi con il sudore. Servono a tenere l'idratazione e a far lavorare bene i muscoli.","Sono utili nelle corse lunghe, negli allenamenti intensi e quando fa caldo. Se ti alleni un'ora in una palestra fresca, di solito ti basta l'acqua."],
+   dose:"1 dose", quando:"Prima, durante o dopo l'allenamento, nei giorni di sudore"},
+
+  {id:"pre", f:3, g:"Per l'allenamento", nome:"Pre-workout", brand:PIU1, prezzo:42.95, img:"pre-workout.jpg",
+   url:"https://1performancenutrition.com/collections/pre-workout/products/pre-workout",
+   claim:"Energia per le sedute dure",
+   testo:["Ti dà energia, migliora la concentrazione e ritarda la stanchezza durante l'allenamento. Ogni dose ha 200 mg di caffeina, quindi alla maggior parte delle persone può bastare anche un caffè, che costa molto meno.","Tienilo per gli allenamenti in cui vuoi spingere davvero."],
+   dose:"1 dose (200 mg di caffeina)", quando:"20-30 minuti prima, massimo 3 volte a settimana e prima delle 16, per non rovinarti il sonno"},
+  {id:"eaa", f:3, g:"Per l'allenamento", nome:"Aminoacidi essenziali (EAA)", brand:PIU1, prezzo:39.95, img:"eaa.jpg",
+   url:"https://1performancenutrition.com/collections/performance/products/1%C2%A9-eaa-essential-amino-acids-1",
+   claim:"Meglio dei BCAA, se proprio vuoi",
+   testo:["Se raggiungi già il tuo fabbisogno di proteine della giornata, non ti servono.","Se ti alleni tantissimo, fai sedute lunghe o punti a una performance competitiva, prenderli durante l'allenamento può darti un piccolo beneficio. Tra gli aminoacidi, meglio gli essenziali completi che i soli BCAA."],
+   dose:"1 dose", quando:"Durante l'allenamento"},
+  {id:"ace", f:3, g:"Per l'allenamento", nome:"ACE aminolytes", brand:BL, prezzo:38, img:"ace.jpg",
+   url:"https://belevels.com/en/products/aminoacidos-esenciales?"+REF,
+   claim:"Aminoacidi e sali in un solo prodotto",
+   testo:["Mette insieme aminoacidi essenziali, creatina e minerali: comodo per chi fa allenamenti lunghi o di resistenza e vuole una cosa sola nella borraccia.","Vale lo stesso discorso degli aminoacidi: se mangi abbastanza proteine, è una comodità in più."],
+   dose:"Quella indicata in etichetta", quando:"Durante l'allenamento",
+   avviso:"Contiene già creatina: se la prendi a parte, tienine conto nella dose del giorno."},
+  {id:"wake", f:3, g:"Giorno e notte", nome:"Wake up mood", brand:BL, prezzo:38, img:"wake.jpg",
+   url:"https://belevels.com/en/products/wake-up-mood?"+REF,
+   claim:"Concentrazione, senza caffeina",
+   testo:["Tirosina, ginkgo biloba, bacopa e acetil-L-carnitina: una formula pensata per la concentrazione e l'energia mentale durante la giornata.","Non contiene caffeina, quindi puoi usarlo anche nei giorni in cui non prendi il pre-workout."],
+   dose:"Quella indicata in etichetta", quando:"La mattina"},
+  {id:"chill", f:3, g:"Giorno e notte", nome:"Chill mood", brand:BL, prezzo:35, img:"chill.jpg",
+   url:"https://belevels.com/en/products/chill-mood?"+REF,
+   claim:"Per addormentarti prima",
+   testo:["Melatonina, GABA, glicina e triptofano: una formula per rilassarti e addormentarti più facilmente.","Funziona meglio se prima sistemi le basi del sonno: orari regolari, poca luce e niente telefono a letto."],
+   dose:"Quella indicata in etichetta", quando:"30-60 minuti prima di dormire",
+   avviso:"Contiene melatonina: se prendi farmaci o hai dubbi, chiedi prima al tuo medico."},
+  {id:"ashwa", f:3, g:"Salute", nome:"Ashwagandha", brand:PIU1, prezzo:24.95, img:"ashwagandha.jpg",
+   url:"https://1performancenutrition.com/collections/salute/products/ashwagandha",
+   claim:"Leggermente sopravvalutata",
+   testo:["Può aiutarti in una certa misura a gestire il cortisolo e lo stress.","Spesso però a renderti stressato sono le abitudini sbagliate e il tuo stile di vita: prima sistema quelli, e poi eventualmente pensa all'ashwagandha."],
+   dose:"Quella indicata in etichetta", quando:"La sera",
+   avviso:"Sconsigliata in gravidanza e con problemi alla tiroide o al fegato: in questi casi chiedi al tuo medico."},
+  {id:"multi", f:3, g:"Salute", nome:"Multivitaminico", brand:PIU1, prezzo:23.95, img:"multivitaminico.jpg",
+   url:"https://1performancenutrition.com/collections/salute/products/multi-vitamin",
+   claim:"Solo se mangi poca frutta e verdura",
+   testo:["Nelle persone sane che mangiano bene, prenderlo tutti i giorni non ha mostrato benefici significativi.","Può avere senso come copertura se la tua alimentazione è povera di frutta e verdura. Il segreto per la tua salute resta sempre mangiare bene, muoverti e dormire abbastanza."],
+   dose:"1 capsula", quando:"A colazione"},
+];
+
+
+const FASCE = [
+  {f:1, id:"base", num:"Fascia 1", cls:"", titolo:"la base", sub:"Se compri solo qualcosa, compra questi. Coprono le carenze più comuni in chi si allena e fanno la maggior parte del lavoro."},
+  {f:2, id:"utili", num:"Fascia 2", cls:"b", titolo:"utili", sub:"Ti semplificano la vita in situazioni precise: quando non arrivi alle proteine o quando sudi tanto."},
+  {f:3, id:"opzionali", num:"Fascia 3", cls:"c", titolo:"opzionali", sub:"Possono servirti in casi specifici, ma nessuna trasformazione è mai dipesa da questi."},
+];
+
+const eur = n => n.toFixed(2).replace(".", ",") + " €";
+
+function card(p){
+  const pct = Math.round(SCONTO[p.brand]*100);
+  return `<article class="card" id="p-${p.id}">
+    <div class="img"><img src="img/${p.img}" alt="${p.nome} ${p.brand}" loading="lazy"></div>
+    <div class="brand">${p.brand}</div>
+    <h3>${p.nome}</h3>
+    <div class="claim">${p.claim}</div>
+    <div class="t">${p.testo.map(t=>`<p>${t}</p>`).join("")}</div>
+    <div class="uso"><div><span>Dose</span>${p.dose}</div><div><span>Quando</span>${p.quando}</div></div>
+    ${p.avviso?`<p class="avviso">${p.avviso}</p>`:""}
+    <div class="foot">
+      <div class="prezzo"><b>−${pct}%</b> con SUPERALE</div>
+      <a class="btn" href="${p.url}" target="_blank" rel="noopener sponsored">Vai al prodotto</a>
+    </div>
+  </article>`;
+}
+
+document.getElementById("fasce").innerHTML = FASCE.map(F=>{
+  const ps = PRODOTTI.filter(p=>p.f===F.f);
+  let inner;
+  if (F.f===3){
+    const gruppi = [...new Set(ps.map(p=>p.g))];
+    inner = gruppi.map(g=>`<div class="gruppo">${g}</div><div class="cards">${ps.filter(p=>p.g===g).map(card).join("")}</div>`).join("");
+  } else inner = `<div class="cards">${ps.map(card).join("")}</div>`;
+  return `<section id="${F.id}"><div class="wrap fascia"><div style="padding-top:56px">
+    <span class="tag ${F.cls}">${F.num}</span><h2 class="h">${F.titolo}</h2><p class="sub">${F.sub}</p>${inner}</div></div></section>`;
+}).join("");
+
+document.querySelectorAll("[data-copia]").forEach(b=>b.addEventListener("click", async()=>{
+  try{ await navigator.clipboard.writeText(b.dataset.copia); b.textContent="Copiato"; }
+  catch(e){ b.textContent="SUPERALE"; }
+  setTimeout(()=>b.textContent="Copia",1800);
+}));
+
+const g = PRODOTTI.map(p=>`<div class="p"><img src="img/${p.img}" alt="${p.nome}"></div>`).join("");
+document.getElementById("giostra").innerHTML = g + g;
+
+// prima e dopo: foto in img/casi/, la sezione compare da sola
+const CASI = [
+  {foto:"casi/dubai.jpg"}, {foto:"casi/spogliatoio.jpg"}, {foto:"casi/tatuaggi.jpg"},
+  {foto:"casi/biondo2.jpg"}, {foto:"casi/spiaggia.jpg"},
+  // per aggiungere nome e risultato: {foto:"casi/x.jpg", nome:"Marco", testo:"4 mesi · −9 kg"}
+];
+if (CASI.length){
+  const html = CASI.map(c=>`<div class="caso"><img src="img/${c.foto}" alt="Prima e dopo${c.nome?" di "+c.nome:""}">${c.nome?`<div class="t"><b>${c.nome}</b> · ${c.testo||""}</div>`:""}</div>`).join("");
+  document.getElementById("nastro").innerHTML = html + html;
+  document.getElementById("casi-sez").hidden = false;
+}
+</script>
+</body>
+</html>
